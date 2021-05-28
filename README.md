@@ -17,7 +17,7 @@ Different dictionaries use different logic in their .plist and after messing aro
 
 `Use plutil to convert your plist to friendly formats and play around`
 
-#### In the project there's currently a csv parser I made in ruby and a custom made .plist with words from N4-N3 Vocabulary list (Japanese)
+#### In the project there's currently a csv parser I made in ruby, a custom made .plist with words from N4-N3 Vocabulary list (Japanese) and the related screensaver wich contains N4-N3 vocabulary (Japanese)
 
 Here's the result ![E1xgpBfXoAQwW-M](https://user-images.githubusercontent.com/50523188/120007580-584ab980-bfda-11eb-9301-3d94862f0b99.jpg)
 
