@@ -7,7 +7,7 @@ In MacOs Big Sur the default Screensavers directory is in `/System/Library/Scree
 Copy the screensaver to a safe directory `cp -r /System/Library/Screen\ Savers/Word\ of\ the\ Day.saver .`
 *I would reccomend a backup of this file*
 
-You can now tweak your .plists as much as you want
+You can now tweak your .plists as much as you want (Relevant plists AFAIK are into ./Resources/Word lists)
 
 Rename The`.saver` file to be able to install
 
