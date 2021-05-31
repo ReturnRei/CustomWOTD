@@ -2,7 +2,7 @@ require 'csv'
 require 'nokogiri'
 
 voc=[]
-CSV.foreach("N5-N3.csv", col_sep: ';') do |row|
+CSV.foreach("toplist.csv", col_sep: ';') do |row|
   voc << row
 end
 
