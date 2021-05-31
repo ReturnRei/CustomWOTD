@@ -7,7 +7,7 @@ CSV.foreach("N5-N3.csv", col_sep: ';') do |row|
 end
 
 xml = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') { |xml|
-  xml.root  do
+  xml.array  do
     for i in 0..1065
   xml.dict do
       xml.key_ "DCSWotDEntryHeadword"
