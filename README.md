@@ -1,6 +1,6 @@
 ## Tweak Word of the day screensaver in MacOs to make your own lists
 
-#### In the project there's currently a ruby csv parser, and a shell script that will make your custom dictionary given your csv
+#### In the project there's a ruby csv parser and a shell script that will make your custom dictionary given a csv
 
 You can use my csv (Which has a list of Japanese vocabulary words) or override it with yours, just make sure it is named "toplist.csv" and is separated by semicolon
 
