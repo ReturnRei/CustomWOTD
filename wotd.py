@@ -53,18 +53,18 @@ if len(tmpPlistOpen['DCSWotDEntries']) > 0:
     tmpPlistOpen['DCSWotDEntries'].clear()
     print('DCSWotDEntries array cleared')
     #loop through the rows and create a dictionary for each row
-    for r in rows:
-        #create a dictionary for each row
-        tmpDict = {}
-        #add the first column to the dictionary as DCSWotDEntryHeadword
-        tmpDict['DCSWotDEntryHeadword'] = r[0]
-        #add the second column to the dictionary as DCSWotDEntrySecondaryHeadword
-        tmpDict['DCSWotDEntrySecondaryHeadword'] = r[1]
-        #add the third column to the dictionary as DCSWotDEntryDefinition
-        tmpDict['DCSWotDEntrySense'] = r[2]
-        #append the dictionary to the DCSWotDEntries array
-        tmpPlistOpen['DCSWotDEntries'].append(tmpDict)
-
+for r in rows:
+    #create a dictionary for each row
+    tmpDict = {}
+    #add the first column to the dictionary as DCSWotDEntryHeadword
+    tmpDict['DCSWotDEntryHeadword'] = r[0]
+    #add the second column to the dictionary as DCSWotDEntrySecondaryHeadword
+    tmpDict['DCSWotDEntrySecondaryHeadword'] = r[1]
+    #add the third column to the dictionary as DCSWotDEntryDefinition
+    tmpDict['DCSWotDEntrySense'] = r[2]
+    #append the dictionary to the DCSWotDEntries array
+    tmpPlistOpen['DCSWotDEntries'].append(tmpDict)
+    print(tmpPlistOpen['DCSWotDEntries'])
 # write the modified plist file
 with open('/Library/Screen Savers/Word of the Dayrr.saver/Contents/Resources/WordLists/WotD_info_DJR.plist', 'wb') as tmpPlist:
     plistlib.dump(tmpPlistOpen, tmpPlist)
